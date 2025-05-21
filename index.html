@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>AES Encrypt/Decrypt</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-light">
+  <div class="container mt-5">
+    <h2 class="text-center mb-4">🔐 AES Mã hóa & Giải mã File</h2>
+    <form method="POST" enctype="multipart/form-data">
+      <div class="mb-3">
+        <label class="form-label">Nhập mã khóa (bất kỳ):</label>
+        <input type="text" name="key" class="form-control" required>
+      </div>
+      <div class="mb-3">
+        <label class="form-label">Chọn file cần xử lý:</label>
+        <input type="file" name="file" class="form-control" required>
+      </div>
+      <div class="d-flex justify-content-between">
+        <button type="submit" name="action" value="encrypt" class="btn btn-primary">🔒 Mã hóa</button>
+        <button type="submit" name="action" value="decrypt" class="btn btn-success">🔓 Giải mã</button>
+      </div>
+    </form>
+
+     if 
+      <div class="mt-4 text-center">
+        <a href="{{ url_for('download', filename=download_link) }}" class="btn btn-outline-dark">
+          📥 Tải file kết quả về
+        </a>
+      </div>
+    endif 
+  </div>
+</body>
+</html>
